@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="http://www.w3schools.com/lib/w3data.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+      <a href="/Users/gcaruzzo/Documents/RestaurantApp/home.html" class="w3-bar-item w3-button">Gourmet Restaurant</a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="/Users/gcaruzzo/Documents/RestaurantApp/home.html" class="w3-bar-item w3-button"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="/Users/gcaruzzo/Documents/RestaurantApp/menu.html" class="w3-bar-item w3-button">Menu</a>
+        <a href="/Users/gcaruzzo/Documents/RestaurantApp/contact.html" class="w3-bar-item w3-button">Contact</a>
+      </div>
+    </div>
+  </div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="/Users/gcaruzzo/Documents/RestaurantApp/Images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">New Location!</h1>
+  </div>
+</header>
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>We offer full service indoor or outdoor dining. Please do not hesitate to contact us with any questions.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Gourmet Restaurant, 42nd Living St, New York, NY 43043</b></p>
+    <p>You can contact us by phone (553) 123-2323 or email catering@catering.com, or you can reserve a table using our form below:</p>
+    <form id="form1" target="_blank" onsubmit="myFunction()">
+      <p><input id="nameID" class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input id="numPeopleID" class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input id="dateID" class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input id="messageID" class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+
+  <!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>42nd Living St, New York, NY 43043</p>
+  <p>(553) 123-2323</p>
+</footer>
+
+
+<script>
+function myFunction() {
+var name = document.getElementById("nameID").value;
+var numPeople = document.getElementById("numPeopleID").value;
+var date = document.getElementById("dateID").value;
+var message = document.getElementById("messageID").value;
+  alert("Hello " + name + ". You have confirmed " + numPeople + " people for dinner on " + date);
+}
+</script>
+
+</body>
+</html>
